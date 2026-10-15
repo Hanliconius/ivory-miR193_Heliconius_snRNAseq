@@ -7,15 +7,18 @@ if (!length(files)) stop("No maintained R files found; check repository root")
 packages <- character()
 walk <- function(x) {
   if (is.call(x)) {
-    op <- as.character(x[[1]])[1]
+    op <- if (is.symbol(x[[1]])) as.character(x[[1]]) else ""
     if (op %in% c("library", "require", "requireNamespace", "::", ":::") && length(x) >= 2L) {
       p <- x[[2]]
-      if (is.symbol(p) || (is.character(p) && length(p) == 1L))
+      if ((is.symbol(p) && op != "requireNamespace") || (is.character(p) && length(p) == 1L))
         packages <<- union(packages, as.character(p))
     }
   }
   if (is.call(x) || is.expression(x) || is.pairlist(x))
-    for (part in as.list(x)) if (!is.symbol(part)) walk(part)
+    for (i in seq_along(x)) {
+      if (identical(x[[i]], quote(expr=))) next
+      if (!is.symbol(x[[i]])) walk(x[[i]])
+    }
 }
 failed <- 0L
 for (p in files) {
