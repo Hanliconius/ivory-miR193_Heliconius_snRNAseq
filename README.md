@@ -6,6 +6,14 @@ Analysis code accompanying *The gene ivory:mir-193 controls scale type different
 
 This repository contains annotated workflows for single-nucleus RNA sequencing, scale-cell classification, differential expression, gene ontology visualization, ivory locus read visualization and miR-193 target prediction. The scripts use explicit input paths and analysis parameters, and export machine-readable results alongside figures.
 
+## How to cite
+
+If you use the workflows, scripts or data in this repository, please cite the accompanying paper:
+
+> Hanly, J.J., Camino, L., Holder, J.C. et al. (2026). The gene *ivory:mir-193* controls scale type differentiation in *Heliconius* butterflies. *Nature Communications*. https://doi.org/10.1038/s41467-026-79315-w
+
+Please also identify the repository [URL](https://github.com/Hanliconius/ivory-miR193_Heliconius_snRNAseq) and the commit or release used, so the exact analysis code can be located. Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff).
+
 ## Explore single-cell expression and splicing at your own locus
 
 **[Start the step-by-step scsplice tutorial →](tools/scsplice/WALKTHROUGH.md)**
@@ -68,6 +76,6 @@ Original source files and distinct analysis branches are preserved. The scripts 
 
 The miR-193 workflow retains the supplied RNAhybrid energy cutoff of −25 kcal/mol. The manuscript describes −20 kcal/mol; these settings must be reconciled before interpreting the archived predictions as a rerun of that Methods description.
 
-## Citation and reuse
+## Reuse and provenance
 
-Please cite the accompanying paper and identify the repository revision used. Machine-readable citation metadata is available in [CITATION.cff](CITATION.cff). A software license and archived release DOI have not yet been assigned.
+A software license and archived release DOI have not yet been assigned. See [How to cite](#how-to-cite) above for the paper citation and guidance on identifying the exact repository revision.
