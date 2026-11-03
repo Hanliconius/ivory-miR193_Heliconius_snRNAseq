@@ -1,9 +1,46 @@
 cff-version: 1.2.0
-message: "Provisional metadata: cite the final paper and archived code release once their identifiers are added."
+message: "If you use this repository, please cite the associated Nature Communications paper and identify the code revision used."
 title: "ivory-miR193_Heliconius_snRNAseq: code associated with Hanly et al. 2026"
 type: software
 authors:
   - family-names: Hanly
     given-names: Joseph J.
-# Add all code contributors, final repository URL, release version and archive DOI.
-repository-code: "https://github.com/Hanliconius/ivory-mir193_paper"
+repository-code: "https://github.com/Hanliconius/ivory-miR193_Heliconius_snRNAseq"
+preferred-citation:
+  type: article
+  title: "The gene ivory:mir-193 controls scale type differentiation in Heliconius butterflies"
+  authors:
+    - family-names: Hanly
+      given-names: Joseph J.
+    - family-names: Camino
+      given-names: Leo
+    - family-names: Holder
+      given-names: Julia C.
+    - family-names: Calderon-Oñate
+      given-names: Paola
+    - family-names: Wagh
+      given-names: Pushkar R.
+    - family-names: Ruiz
+      given-names: Joshue
+    - family-names: Zhao
+      given-names: Leia
+    - family-names: Stroh
+      given-names: Eva D.
+    - family-names: Livraghi
+      given-names: Luca
+    - family-names: Loh
+      given-names: Ling S.
+    - family-names: Arias
+      given-names: Carlos F.
+    - family-names: Gilbert
+      given-names: Lawrence E.
+    - family-names: Wray
+      given-names: Gregory A.
+    - family-names: Martin
+      given-names: Arnaud
+    - family-names: McMillan
+      given-names: W. Owen
+  journal: Nature Communications
+  year: 2026
+  doi: 10.1038/s41467-026-79315-w
+  url: "https://doi.org/10.1038/s41467-026-79315-w"
